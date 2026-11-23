@@ -1,0 +1,271 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Navetha | Portfolio</title>  <style>  
+* {  
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+  scroll-behavior: smooth;  
+}  
+  
+body {  
+  font-family: Arial, sans-serif;  
+  background: #090d1b;  
+  color: white;  
+  line-height: 1.7;  
+}  
+  
+nav {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  padding: 18px 7%;  
+  background: #10162a;  
+  position: sticky;  
+  top: 0;  
+  z-index: 10;  
+}  
+  
+.logo {  
+  color: #a78bfa;  
+  font-size: 22px;  
+  font-weight: bold;  
+}  
+  
+nav a {  
+  color: white;  
+  text-decoration: none;  
+  margin-left: 15px;  
+  font-size: 13px;  
+}  
+  
+.hero {  
+  min-height: 85vh;  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  padding: 70px 9%;  
+  background: radial-gradient(  
+    circle at top right, #34245d, #090d1b 65%  
+  );  
+}  
+  
+.hero p:first-child {  
+  color: #a78bfa;  
+  font-weight: bold;  
+}  
+  
+.hero h1 {  
+  font-size: clamp(38px, 8vw, 65px);  
+  line-height: 1.2;  
+  margin: 15px 0;  
+}  
+  
+.hero h1 span {  
+  color: #a78bfa;  
+}  
+  
+.hero .intro {  
+  color: #c0c5d5;  
+  max-width: 600px;  
+  margin-bottom: 25px;  
+}  
+  
+.btn {  
+  display: inline-block;  
+  background: #8b5cf6;  
+  color: white;  
+  text-decoration: none;  
+  padding: 12px 23px;  
+  border-radius: 7px;  
+  margin: 5px 5px 5px 0;  
+}  
+  
+section {  
+  padding: 65px 8%;  
+}  
+  
+h2 {  
+  font-size: 30px;  
+  margin-bottom: 25px;  
+  color: #c4b5fd;  
+}  
+  
+.about, .contact {  
+  color: #c0c5d5;  
+}  
+  
+.skills, .projects {  
+  display: grid;  
+  grid-template-columns: repeat(  
+    auto-fit, minmax(140px, 1fr)  
+  );  
+  gap: 15px;  
+}  
+  
+.card {  
+  background: #151d32;  
+  padding: 20px;  
+  border: 1px solid #303858;  
+  border-radius: 12px;  
+  transition: 0.3s;  
+}  
+  
+.card:hover {  
+  transform: translateY(-5px);  
+  border-color: #a78bfa;  
+}  
+  
+.card h3 {  
+  color: #c4b5fd;  
+  margin-bottom: 8px;  
+}  
+  
+.card p {  
+  color: #c0c5d5;  
+  font-size: 14px;  
+}  
+  
+section:nth-child(even) {  
+  background: #0d1425;  
+}  
+  
+footer {  
+  text-align: center;  
+  padding: 25px;  
+  color: #9ca3af;  
+  background: #10162a;  
+}  
+  
+a {  
+  overflow-wrap: anywhere;  
+}  
+  
+@media(max-width: 600px) {  
+  nav {  
+    flex-direction: column;  
+    gap: 10px;  
+  }  
+  
+  nav a {  
+    margin: 0 5px;  
+    font-size: 11px;  
+  }  
+  
+  section {  
+    padding: 50px 7%;  
+  }  
+}  
+</style>  </head>  <body>  <nav>  
+  <div class="logo">Navetha.</div>  
+  <div>  
+    <a href="#about">About</a>  
+    <a href="#skills">Skills</a>  
+    <a href="#projects">Projects</a>  
+    <a href="#contact">Contact</a>  
+  </div>  
+</nav>  <header class="hero">  
+  <p>HELLO, WELCOME TO MY PORTFOLIO</p>  
+  <h1>Hi, I'm <span>Navetha</span></h1>  
+  <h2>Information Technology Student</h2>  
+  <p class="intro">  
+    Passionate about technology, programming and  
+    building creative solutions. I enjoy learning  
+    new technologies and developing real-world projects.  
+  </p>  
+  <div>  
+    <a href="#projects" class="btn">View My Projects</a>  
+    <a href="#contact" class="btn">Contact Me</a>  
+  </div>  
+</header>  <section id="about">  
+  <h2>About Me</h2>  
+  <p class="about">  
+    I am a B.Tech Information Technology student at  
+    SRM Institute of Science and Technology.  
+    I am interested in software development,  
+    web technologies and problem solving.  
+    I continuously improve my technical skills  
+    through academic projects and practical learning.  
+  </p>  
+</section>  <section id="skills">  
+  <h2>Technical Skills</h2>  
+  <div class="skills">  
+    <div class="card"><h3>C</h3><p>Programming</p></div>  
+    <div class="card"><h3>Python</h3><p>Programming</p></div>  
+    <div class="card"><h3>HTML</h3><p>Web Development</p></div>  
+    <div class="card"><h3>CSS</h3><p>Web Design</p></div>  
+    <div class="card"><h3>JavaScript</h3><p>Web Development</p></div>  
+    <div class="card"><h3>SQL</h3><p>Database</p></div>  
+    <div class="card"><h3>DBMS</h3><p>Database Management</p></div>  
+    <div class="card"><h3>GitHub</h3><p>Version Control</p></div>  
+  </div>  
+</section>  <section id="experience">  
+  <h2>Experience</h2>  
+  <div class="card">  
+    <h3>Web Development Intern</h3>  
+    <p>Nxtlogic Software Solutions, Coimbatore</p>  
+    <p>June 2026 – July 2026</p>  
+    <p>Gained practical exposure to web development  
+    and software development workflows.</p>  
+  </div>  
+</section>  <section id="projects">  
+  <h2>My Projects</h2>  
+  <div class="projects">  <div class="card">  
+  <h3>AI Customer Support System</h3>  
+  <p>Python, Streamlit, SQLite and NLP-based  
+  customer query classification.</p>  
+</div>  
+
+<div class="card">  
+  <h3>Student Management System</h3>  
+  <p>A project to manage student information  
+  and academic records.</p>  
+</div>  
+
+<div class="card">  
+  <h3>Maxwell Charitable Trust –  
+  NGO Management System</h3>  
+  <p>A web-based NGO management system  
+  designed to manage charitable activities,  
+  donor information and organizational records.</p>  
+</div>  
+
+<div class="card">  
+  <h3>Course Registration System</h3>  
+  <p>A DBMS project for managing  
+  student course registrations.</p>  
+</div>  
+
+<div class="card">  
+  <h3>Predictive Cache Replacement</h3>  
+  <p>Exploring RNN-based prediction  
+  with LRU cache replacement.</p>  
+</div>
+
+  </div>  
+</section>  <section id="education">  
+  <h2>Education</h2>  
+  <div class="card">  
+    <h3>B.Tech – Information Technology</h3>  
+    <p>SRM Institute of Science and Technology</p>  
+  </div>  
+</section>  <section id="contact">  
+  <h2>Contact Me</h2>  
+  <p class="contact">  
+    Interested in technology, learning and  
+    collaboration. Connect with me!  
+  </p>  
+  <br>  
+  <a class="btn"  
+  href="https://linkedin.com/in/nave-tha-826483358"  
+  target="_blank">LinkedIn</a>  <a class="btn"  
+href="https://github.com/navetha787"  
+target="_blank">GitHub</a>
+
+</section>  <footer>  
+  © 2026 Navetha | Personal Portfolio  
+</footer>  </body>  
+</html>  
+Ippo ok va   
